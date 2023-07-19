@@ -1,6 +1,6 @@
-name: hardware_sensor_flutter
-description: A Flutter Project to access all andoird.hardware sensors
-version: 0.0.1
+name: sensor_flutter
+description: A Flutter Project to access all android.hardware sensors
+version: 1.0.2
 homepage:
 
 environment:
@@ -42,9 +42,6 @@ flutter:
         pluginClass: SensorFlutterPlugin
       ios:
         pluginClass: SensorFlutterPlugin
-      web:
-        pluginClass: SensorFlutterWeb
-        fileName: sensor_flutter_web.dart
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
