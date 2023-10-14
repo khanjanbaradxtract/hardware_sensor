@@ -335,7 +335,7 @@ class LocationStreamHandlerImpl(private val locationManager: LocationManager, pr
   }
 
   override fun onCancel(arguments: Any?) {
-    Log.d("huhf_app", "in location onCancel")
+    // Log.d("huhf_app", "in location onCancel")
     locationManager.removeUpdates(locationListener)
     eventSink = null
   }
@@ -347,7 +347,7 @@ class LocationStreamHandlerImpl(private val locationManager: LocationManager, pr
       try {
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, interval, 0.1f, locationListener)
       } catch(ex: SecurityException) {
-        Log.d("huhf_app", "Security Exception, no location service available")
+        Log.d("huhf_app", "Security Exception, no permission to use location service")
       }
     }
   }
