@@ -1,6 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sensor_flutter_example">
-   <application
+
+    <uses-feature android:name="android.hardware.location" />
+    <uses-feature android:name="android.hardware.type.watch" />
+    
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
         android:label="sensor_flutter_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
